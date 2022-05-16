@@ -137,8 +137,8 @@ resistor_dataset = dataset_base.copy({
     'train_info':   'data/resistors_kaggle/train_coco.json',
 
     # Validation images and annotations.
-    'valid_images': 'yolact/data/resistors_kaggle/',
-    'valid_info':   'yolact/data/resistors_kaggle/train_coco.json',
+    'valid_images': 'data/resistors_kaggle/',
+    'valid_info':   'data/resistors_kaggle/train_coco.json',
 
     'has_gt': True,
 
