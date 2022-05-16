@@ -128,6 +128,24 @@ dataset_base = Config({
     'label_map': None
 })
 
+# Custom Resistor Dataset
+resistor_dataset = dataset_base.copy({
+    'name': 'Resistor Dataset',
+
+    # Training images and annotations
+    'train_images': '/Users/sean/Documents/OhmScan/dataset/resistors_kaggle/train',
+    'train_info':   '/Users/sean/Documents/OhmScan/dataset/resistors_kaggle/train_coco.json',
+
+    # Validation images and annotations.
+    'valid_images': '/Users/sean/Documents/OhmScan/dataset/resistors_kaggle/train',
+    'valid_info':   '/Users/sean/Documents/OhmScan/dataset/resistors_kaggle/train_coco.json',
+
+    'has_gt': True,
+
+    'class_names': ('res'),
+    'label_map': COCO_LABEL_MAP
+})
+
 coco2014_dataset = dataset_base.copy({
     'name': 'COCO 2014',
     
@@ -657,8 +675,8 @@ yolact_base_config = coco_base_config.copy({
     'name': 'yolact_base',
 
     # Dataset stuff
-    'dataset': coco2017_dataset,
-    'num_classes': len(coco2017_dataset.class_names) + 1,
+    'dataset': resistor_dataset,
+    'num_classes': 1 + 1,
 
     # Image Size
     'max_size': 550,
