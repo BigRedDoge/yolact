@@ -133,8 +133,8 @@ resistor_dataset = dataset_base.copy({
     'name': 'Resistor Dataset',
 
     # Training images and annotations
-    'train_images': 'yolact/data/resistors_kaggle/',
-    'train_info':   'yolact/data/resistors_kaggle/train_coco.json',
+    'train_images': 'data/resistors_kaggle/',
+    'train_info':   'data/resistors_kaggle/train_coco.json',
 
     # Validation images and annotations.
     'valid_images': 'yolact/data/resistors_kaggle/',
