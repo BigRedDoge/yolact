@@ -142,8 +142,7 @@ resistor_dataset = dataset_base.copy({
 
     'has_gt': True,
 
-    'class_names': ('res'),
-    'label_map': { 1: 1 }
+    'class_names': ('res')
 })
 
 coco2014_dataset = dataset_base.copy({
