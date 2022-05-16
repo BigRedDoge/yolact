@@ -133,12 +133,12 @@ resistor_dataset = dataset_base.copy({
     'name': 'Resistor Dataset',
 
     # Training images and annotations
-    'train_images': '/Users/sean/Documents/OhmScan/dataset/resistors_kaggle/train',
-    'train_info':   '/Users/sean/Documents/OhmScan/dataset/resistors_kaggle/train_coco.json',
+    'train_images': 'yolact/data/resistors_kaggle/',
+    'train_info':   'yolact/data/resistors_kaggle/train_coco.json',
 
     # Validation images and annotations.
-    'valid_images': '/Users/sean/Documents/OhmScan/dataset/resistors_kaggle/train',
-    'valid_info':   '/Users/sean/Documents/OhmScan/dataset/resistors_kaggle/train_coco.json',
+    'valid_images': 'yolact/data/resistors_kaggle/',
+    'valid_info':   'yolact/data/resistors_kaggle/train_coco.json',
 
     'has_gt': True,
 
